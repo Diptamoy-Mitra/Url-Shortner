@@ -17,7 +17,7 @@ const selectElement = (selector) => {
   
   async function shortenUrl(url) {
     try {
-      const res = await fetch(`http://api.shrtco.de/v2/shorten?url=${url}`);
+      const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
       const data = await res.json();
       const newUrl = document.createElement("div");
       newUrl.classList.add("item");
